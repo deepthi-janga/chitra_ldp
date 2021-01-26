@@ -39,8 +39,8 @@ function getRandomNumberInARange(){
     document.getElementsByTagName("input")[1].value);
 }
 
-document.getElementsByTagName("button")[2].addEventListener("click", loremString)
-function loremString(){
+document.getElementsByTagName("button")[2].addEventListener("click", getLoremString)
+function getLoremString(){
     document.getElementsByTagName("p")[2].innerText= lorem
 }
 
@@ -62,8 +62,8 @@ function displayOnlySpecifiedNoOfChars() {
     }
 }
 
-document.getElementsByTagName("button")[5].addEventListener("click", currentFormattedDate)
-function currentFormattedDate(){
+document.getElementsByTagName("button")[5].addEventListener("click", getCurrentFormattedDate)
+function getCurrentFormattedDate(){
     const date = new Date();
     const today = date.getDate();
     const currentMonth = date.getMonth() + 1; 
@@ -71,8 +71,8 @@ function currentFormattedDate(){
     document.getElementsByTagName("p")[5].innerText = today + "/" + currentMonth + "/" + currentYear
 }
 
-document.getElementsByTagName("button")[6].addEventListener("click", currentFormattedTime)
-function currentFormattedTime(){
+document.getElementsByTagName("button")[6].addEventListener("click", getCurrentFormattedTime)
+function getCurrentFormattedTime(){
     const date = new Date();
     const hrs = date.getHours();
     const mins = date.getMinutes(); 
@@ -80,14 +80,14 @@ function currentFormattedTime(){
     document.getElementsByTagName("p")[6].innerText = hrs + ":" + mins + ":" + secs
 }
 
-document.getElementsByTagName("button")[7].addEventListener("click", inchesToFeet)
-function inchesToFeet(){
+document.getElementsByTagName("button")[7].addEventListener("click", convertInchesToFeet)
+function convertInchesToFeet(){
     document.getElementsByTagName("p")[7].innerText = document.getElementsByTagName("input")[4].value / 12
 }
 
 
-document.getElementsByTagName("button")[8].addEventListener("click", feetsToInches)
-function feetsToInches(){
+document.getElementsByTagName("button")[8].addEventListener("click", convertFeetsToInches)
+function convertFeetsToInches(){
     document.getElementsByTagName("p")[8].innerText = document.getElementsByTagName("input")[5].value * 12
 }
 
@@ -101,8 +101,8 @@ function checkForSameLengthOfWords(){
     }
 }
 
-document.getElementsByTagName("button")[10].addEventListener("click", randomPwd)
-function randomPwd(){
+document.getElementsByTagName("button")[10].addEventListener("click", getRandomPwd)
+function getRandomPwd(){
     document.getElementsByTagName("p")[10].innerText= Math.random().toString(36).slice(-8);//converts a number to string with base radix 36(!6+10), slice(-8) returns last 8 characters
 }
 
@@ -121,8 +121,8 @@ function checkForEvenOdd(){
 }
 }
 
-document.getElementsByTagName("button")[12].addEventListener("click", randomColor)
-function randomColor(){
+document.getElementsByTagName("button")[12].addEventListener("click", getRandomColor)
+function getRandomColor(){
     document.getElementsByTagName("p")[12].innerText= getRandomElementFromArray(colors)
 }
 
@@ -130,8 +130,8 @@ function randomColor(){
      return arr[getRandomInt(0, arr.length-1)];
  }
 
-document.getElementsByTagName("button")[13].addEventListener("click", randomFirstnameLastname)
-function randomFirstnameLastname(){
+document.getElementsByTagName("button")[13].addEventListener("click", getRandomFirstnameLastname)
+function getRandomFirstnameLastname(){
     var randomName = getRandomElementFromArray(names);
     document.getElementsByTagName("p")[13].innerText= randomName.firstName + " " + randomName.lastName
 }
