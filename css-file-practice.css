@@ -17,17 +17,74 @@ div {
     margin-left: 5px;
 }
 
-#submit {
+#submit  {
     margin-left: 297px;
+    
 }
 .container i {
     margin-left: -30px;
 }
 
 ul {
-    list-style-type: square;
+    list-style-type: square;    
 }
 
 .button3 {
     margin-left: 300px; 
 }
+
+body {
+    background-color: lightpink;
+}
+
+#addBorder {
+    border-style: dotted;
+    border-width: 2px;
+    border-color: red;
+    border-radius: 14px;
+    box-sizing: border-box;
+    height : 80px;
+    width : 200px;
+    text-align : center;
+    padding-top: 15px;
+    margin: 50px 0 50px 0;
+    outline-style: solid;
+    outline-color: red;
+    outline-width: thick;
+    outline-offset: 15px;
+}
+
+#textDecorator {
+    text-decoration: underline;
+    text-indent: 50px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px;
+}
+
+.p2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.p1 {
+    font-family: "Times New Roman", Times, serif;
+}
+
+.p3 {
+    font-family: "Audiowide", sans-serif;
+    font-size: 20px;
+
+}
+
+a:link {
+    color: red;
+  }
+
+table, tr, th, td {
+    border: 1px solid black;
+}
+
+  #googleIcon {
+    float: left;
+  }
+
+  
