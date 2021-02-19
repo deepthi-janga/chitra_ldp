@@ -2,10 +2,9 @@ import {Dependencies} from '../../robots/greenCommute/Robot1';
 const dependencies = new Dependencies();
 describe('API testing', () => {
     const base_url = Cypress.env('url');
-    let newData;
+    let newData: { API_EndPoints: { getAllJobs: any; }; };
     beforeEach(() => {
-        cy.server()
-        cy.route('GET','http://bc15-green-commute.dev-apps.io:8080/api/skills','fixtures:users.json')
+        
         cy.fixture('APIEndPoints').then(function(data) {
              newData = data;
              dependencies.visitGreenCommute();
@@ -13,7 +12,7 @@ describe('API testing', () => {
     })
     
     it('GET', () => {
-        cy.request('GET',`${base_url}/api/jobs`).
+        cy.request('GET',`${base_url}${newData.API_EndPoints.getAllJobs}`).
         then((response) => {
             expect(response).to.have.property('status',200)
         })
