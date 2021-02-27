@@ -2,18 +2,20 @@
 import '../support/index';
 
 export abstract class BaseEyes {
-//costum
+
+//checks title of the page
   seesPageTitle(title : string) {
     cy.title().should('include', title)
     return this;
   }
 
-  //costum
+  //checks for text in page
   seesForTextInPage(text : string) {
     cy.contains(text)
     return this;
   }
 
+  //checks text of element located by id
   seesTextWithId(id: string, text: string) {
     cy.get(`#${id}`).should('have.text', text);
     return this;
