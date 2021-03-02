@@ -1,0 +1,7 @@
+{ 
+  "API_EndPoints" :
+  {
+  "getAllJobs": "/api/jobs"
+  
+}
+}

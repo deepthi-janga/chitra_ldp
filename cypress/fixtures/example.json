@@ -1,0 +1,13 @@
+ {
+  "title": "Green Commute",
+  "yourLocation": "hyderabad",
+  "yourJobLocation": "mumbai",
+  "yourSkills" : "Product Manager",
+  "invalidYourLocation": "dgfgdshgdfg",
+  "yourLocationInCaplitalLetters" : "HYDERABAD, TELANGANA, INDIA",
+  "autoSugestionOfEnteredText" : "Hyderabad, Telangana, India",
+  "messageWhenInvalidDataIsEntered" : "No options",
+  "savedJobSuccessMessage" : "Job saved for future reference.",
+  "jobAlreadySavedMessage" : "Job already present in saved jobs.",
+  "yourLocationAsSubstring" : "TELANGANA"
+}
